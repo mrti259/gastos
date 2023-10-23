@@ -1,8 +1,8 @@
 import { config } from "dotenv";
 
-import "./app.test.ts";
+import "./app/gastos/storage.test";
 import { runTests } from "./utils";
 
-config({ path: ".test.env" });
+config({ path: ".env.test" });
 
 runTests();
