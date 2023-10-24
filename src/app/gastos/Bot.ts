@@ -72,7 +72,7 @@ export class Bot {
   }
 
   private async handleUpdate({ chat, text }: TMessage) {
-    const isAuth = this.authenticate(chat);
+    const isAuth = await this.authenticate(chat);
     if (!isAuth) {
       await this.telegram.sendMessage(
         chat.id,

@@ -35,7 +35,11 @@ export class Telegram {
   }
 
   sendMessage(chat_id: number, text: string) {
-    return axios.post(this.apiMethod("sendMessage"), { chat_id, text });
+    return axios.post(
+      this.apiMethod("sendMessage"),
+      { chat_id, text },
+      { headers: { "Content-Type": "application/json" } },
+    );
   }
 
   private apiMethod(recurso: string) {
