@@ -1,5 +1,5 @@
 {
-  "name": "admin-gastos",
+  "name": "gastos",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "prettier": "^2.8.1",
     "ts-node": "^10.9.1",
     "tsc": "^2.0.4",
-    "vercel": "^32.5.0"
+    "vercel": "^32.3.0"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.1",
