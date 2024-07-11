@@ -1,8 +1,11 @@
-import { Schema } from "../notion/Schema";
-import { CheckboxProperty } from "../notion/properties/CheckboxProperty";
-import { NumberProperty } from "../notion/properties/NumberProperty";
-import { RelationWithOneProperty } from "../notion/properties/RelationWithOneProperty";
-import { TitleProperty } from "../notion/properties/TitleProperty";
+import {
+  CheckboxProperty,
+  NumberProperty,
+  RelationWithOneProperty,
+  Schema,
+  TitleProperty,
+} from "dbotion";
+
 import { Categoria, Cuota, Gasto, Usuario } from "./types";
 
 export const categoriaSchema = new Schema<Categoria>({

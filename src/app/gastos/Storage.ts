@@ -1,6 +1,6 @@
 import { Client } from "@notionhq/client";
+import { Database, Identificable } from "dbotion";
 
-import { Database, Identificable } from "../notion/Database";
 import {
   categoriaSchema,
   cuotaSchema,
